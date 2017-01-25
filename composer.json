@@ -1,27 +1,10 @@
 {
-    "name": "artovenry/custom_post_type",
-    "require": {
-        "php": "^5.4",
-        "mthaml/mthaml": "^1.8"
+  "name": "artovenry/custom_post_type",
+  "autoload":{
+    "psr-4": {
+      "": ["lib/"],
+      "MtHaml\\": ["MtHaml-1.8.0/lib/"]
     },
-    "require-dev": {
-        "php": "^5.4",
-        "symfony/debug": "^2.8",
-        "phpunit/phpunit": "^4.8",
-        "wp-cli/wp-cli": "^0.24",
-        "facebook/webdriver": "^1.1",
-        "symfony/var-dumper": "2.8"
-    },
-    "authors": [
-        {
-            "name": "artovenry",
-            "email": "artovenry@gmail.com"
-        }
-    ],
-    "autoload":{
-      "psr-4": {
-        "": ["lib/"]
-      },
-      "files": ["lib/constants.php", "lib/functions.php", "lib/errors.php"]
-    }
+    "files": ["lib/constants.php", "lib/functions.php", "lib/errors.php"]
+  }
 }
